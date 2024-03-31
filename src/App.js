@@ -23,7 +23,7 @@ function App() {
           rel="noopener noreferrer"
         >
           {/* Learn React */}
-          <Class />
+          <Class className='GUNDAM'/>
         </a>
       </header>
     </div>
