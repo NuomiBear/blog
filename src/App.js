@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Class from './Class';
 
 function App() {
 
   const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    fetch('http://localhost:3000/get').then(response => response.text()).then(data => {
+      console.log(data)
+    })
+  })
 
   console.log(index)
 
@@ -23,7 +29,7 @@ function App() {
           rel="noopener noreferrer"
         >
           {/* Learn React */}
-          <Class className='GUNDAM'/>
+          <Class className='GUNDAM' />
         </a>
       </header>
     </div>
