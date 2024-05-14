@@ -1,7 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
 import { useState, useEffect } from 'react';
-import Class from './Class';
+import './App.css';
+import AppClass from './library/compoents/App';
 
 function App() {
 
@@ -30,12 +29,17 @@ function App() {
           rel="noopener noreferrer"
         >
           {/* Learn React */}
-          <Class className='GUNDAM' />
         </a>
+        <AppClass />
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
 
