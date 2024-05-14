@@ -7,11 +7,12 @@ function App() {
 
   const [index, setIndex] = useState(0)
 
-  useEffect(() => {
-    fetch('http://localhost:3000/get').then(response => response.text()).then(data => {
-      console.log(data)
-    })
-  })
+  // useEffect(() => {
+  //   console.log('fetch')
+  //   fetch('http://localhost:3000/get').then(response => response.text()).then(data => {
+  //     console.log(data)
+  //   })
+  // })
 
   console.log(index)
 
@@ -20,7 +21,7 @@ function App() {
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is first version 0.0.1
         </p>
         <a
           className="App-link"
