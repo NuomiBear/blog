@@ -4,59 +4,79 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .content {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
-.content {
-  width: 100%;
-  max-width: 750px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* PROFILE */
+/* PROFILE------------------------------ */
 .header {
   padding: 16pt 0;
 }
 
-.user {
+.header .user {
   padding-left: 0;
   margin-bottom: 4pt;
   max-width: 100%;
   overflow: hidden;
 }
 
-.userinfo {
+.header .user .link_user {
+  display: inline-flex;
+  align-items: baseline;
+  width: fit-content;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header .user .link_user .userinfo {
+  display: inline-flex;
   padding-left: 0;
   margin-bottom: 4pt;
   max-width: 100%;
   overflow: hidden;
+  justify-content: center;
+  align-items:center;
+  width: max-content;
+  height: auto;
 }
 
-.avatar {
+.header .user .link_user .userinfo .avatar {
   display: inline-block;
   position: relative;
   overflow: hidden;
   border: 1px solid #eaeaea;
-  border-radius: 50%;
   vertical-align: top;
   background-color: #fff;
   box-sizing: border-box;
-  width: calc(1.75* 16px);
-  height: calc(1.75* 16px);
+  width: calc(2 * 16px);
+  height: calc(2 * 16px);
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
 
-.names {
+.header .user .link_user .userinfo .avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.header .user .link_user .userinfo .names {
   margin-left: 8pt;
   display: inline-flex;
   flex-direction: column;
   white-space: nowrap;
 }
 
-.name {
-  font-size: calc(0.89 * var(--user-font-size));
+.header .user .link_user .userinfo .names .name {
+  font-size: 1rem;
   color: #111;
   line-height: 1.1em;
   text-transform: capitalize;
@@ -66,11 +86,73 @@
   overflow: hidden;
 }
 
-.info {
-  font-size: calc(0.75 * var(--user-font-size));
+.header .user .link_user .userinfo .names .info {
+  font-size: 0.89rem;
   color: #444;
 }
 
+.header .link {
+  text-rendering: geometricPrecisionl;
+}
 
+.header .link a {
+  color: #444;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 4pt;
+  text-decoration: none;
+}
+
+.header .link a:hover {
+  color: darkgrey;
+} 
+
+/* NOTES----------------------------- */
+.notes section {
+  margin-top: calc(16px * 2);
+}
+
+.notes section h2 {
+  font-size: 0.9rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #444;
+  padding: 2px 4pt 0 0;
+  display: inline-block;
+  margin: 0;
+}
+
+.notes section .content {
+  margin: 16px 0;
+}
+
+.notes section .content .item {
+  margin-bottom: calc(1.35* 8pt);
+  overflow: hidden;
+  max-width: 60vw;
+}
+
+.notes section .content .item a {
+  color: #333;
+  font-size: 0.95rem;
+  max-width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.notes section .content .item a span {
+  color: #666;
+  font-size: 0.75em;
+  display: block;
+  line-height: 1.5rem;
+}
+
+.notes section .content .more a {
+  text-decoration: none;
+}
 
 

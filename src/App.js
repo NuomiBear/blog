@@ -40,24 +40,27 @@ function App() {
           </div>
         </header>
         {/* NOTES */}
-        <div className='dynamic-content'>
+        <div className='notes'>
           <section>
             <h2>最近</h2>
             <div className='content'>
-              <div className='jsx_1'>
-                <a>文章1
+              <div className='jsx_1 item'>
+                <a href=''>文章1
                   <span>2024年5月16日</span>
                 </a>
               </div>
-              <div className='jsx_2'>
+              <div className='jsx_2 item'>
                 <a>文章2
                   <span>2024年5月16日</span>
                 </a>
               </div>
-              <div className='jsx_3'>
+              <div className='jsx_3 item'>
                 <a>文章3
                   <span>2024年5月16日</span>
                 </a>
+              </div>
+              <div className='jsx_4 more'>
+                <a href='/blog'>......</a>
               </div>
             </div>
           </section>
