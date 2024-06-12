@@ -155,4 +155,15 @@
   text-decoration: none;
 }
 
+/* notes_span_contacts */
+
+.notes_span_contacts {
+  display: block;
+  width: calc(1* 16px);
+  height: calc(5* 16px);
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* contacts */
 
