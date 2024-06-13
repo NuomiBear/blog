@@ -43,7 +43,7 @@
   max-width: 100%;
   overflow: hidden;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   width: max-content;
   height: auto;
 }
@@ -105,7 +105,7 @@
 
 .header .link a:hover {
   color: darkgrey;
-} 
+}
 
 /* NOTES----------------------------- */
 .notes section {
@@ -155,8 +155,7 @@
   text-decoration: none;
 }
 
-/* notes_span_contacts */
-
+/* notes_span_contacts---------------- */
 .notes_span_contacts {
   display: block;
   width: calc(1* 16px);
@@ -165,5 +164,28 @@
   margin: 0 0 0 0;
 }
 
-/* contacts */
+/* contacts--------------------------- */
+.contacts {
+  width: 750px;
+  padding: 0 4pt;
+  position: absolute;
+  z-index: 1;
+  bottom: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+}
 
+.contacts .between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts .between .socials a {
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.contacts .between .light {}

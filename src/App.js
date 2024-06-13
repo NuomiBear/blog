@@ -75,7 +75,9 @@ function App() {
               <a>TWITTER</a>
             </div>
             <div className='light'>
-              <span title='点击切换主题' className='light_span'></span>
+              <span title='点击切换主题' className='light_span'>
+                <img src="/dark.svg" />
+              </span>
             </div>
           </div>
         </div>
