@@ -65,6 +65,20 @@ function App() {
             </div>
           </section>
         </div>
+        <span className='notes_span_contacts'></span>
+        {/* CONTACTS */}
+        <div className='contacts'>
+          <div className='between'>
+            <div className='socials'>
+              <a>EMAIL</a>
+              <a>GITHUB</a>
+              <a>TWITTER</a>
+            </div>
+            <div className='light'>
+              <span title='点击切换主题' className='light_span'></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
